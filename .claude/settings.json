@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PROJECT_DIR:-C:/Users/swath/hcm-playwright}/.claude/hooks/prompt-md-reminder.mjs\" 2>/dev/null || true",
+            "timeout": 10,
+            "statusMessage": "Checking whether PROMPT.md needs updating"
+          }
+        ]
+      }
+    ]
+  }
+}

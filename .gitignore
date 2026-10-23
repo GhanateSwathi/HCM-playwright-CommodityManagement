@@ -1,0 +1,21 @@
+node_modules/
+
+# Credentials. Only .env.example is tracked.
+.env
+*.env
+!.env.example
+
+# Run output. Worth keeping out of git on this project in particular: traces and
+# videos capture the login form, and the workbench-ui password field exposes its
+# value as plain text in the DOM, so a trace can carry the password in the clear.
+artifacts/
+playwright-report/
+test-results/
+downloads/
+*.zip
+*.webm
+*.png
+
+# OS
+.DS_Store
+Thumbs.db

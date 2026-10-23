@@ -1,0 +1,23 @@
+{
+  "name": "hcm-playwright",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright coverage for the HCM workbench-ui Commodity Management module, including the Bulk Stock Upload flow that Maestro cannot automate.",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report artifacts/report",
+    "codegen": "playwright codegen https://bauchi-hcm.digit.org/workbench-ui/employee/user/login"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "exceljs": "^4.4.0"
+  }
+}
